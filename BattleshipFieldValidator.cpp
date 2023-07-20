@@ -214,25 +214,5 @@ private:
 
 bool validate_battlefield(std::vector< std::vector<int>> field) {
     PlayerField playerField(field);
-	return playerField.validation();
-}
-
-std::vector<std::vector<int>> testfield =
-{
-      std::vector<int> {1, 0, 0, 0, 0, 1, 1, 0, 0, 0},
-      std::vector<int> {1, 0, 0, 0, 0, 0, 0, 0, 1, 0},
-      std::vector<int> {1, 0, 0, 0, 1, 1, 1, 0, 1, 0},
-      std::vector<int> {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-      std::vector<int> {0, 1, 0, 0, 0, 0, 0, 0, 1, 0},
-      std::vector<int> {0, 1, 0, 0, 1, 1, 1, 0, 0, 0},
-      std::vector<int> {0, 0, 0, 0, 0, 0, 0, 0, 1, 0},
-      std::vector<int> {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
-      std::vector<int> {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
-      std::vector<int> {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-};
-
-int main() {
-
-	std::cout << validate_battlefield(testfield);
-	return 0;
+    return playerField.validation();
 }
